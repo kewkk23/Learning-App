@@ -19,6 +19,7 @@ const layout = ({ children }) => {
           Name: user?.username
         }
         const result = await GlobalApi.CreateNewUser(data)
+        return result
       } catch (err) {
         console.log(err);
       }
